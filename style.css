@@ -1,7 +1,7 @@
 
 
 #section-contain{
-    background-image: url(./FullStack/assets/backgroung_profile.jpg);
+    background-image: url(./FullStack/assets/background.png);
     width: auto;
     height: auto;
     
@@ -25,7 +25,7 @@
 
 #nav-container ul li a{
     text-decoration: none;
-    color: rgb(3, 188, 170);
+    color: rgb(88, 86, 86);
 }
 #img-container{
     text-align: center;
@@ -38,13 +38,13 @@
     height: 18vw;
     border-radius: 50%;
     background-size: cover;
-    border: .3vw solid rgb(156, 244, 206);
+    border: .3vw solid rgb(243, 243, 243);
    
     
 }
 #alita{
 
-    color: rgb(156, 244, 206);
+    color: rgb(63, 42, 42);
     text-align: center;
     padding-top: .5vw;
     font-size: 4vw;
@@ -59,8 +59,9 @@
    margin-left: 8vw;
    margin-right: 8vw;
     font-size: 1.8vw;
-    color: rgb(194, 194, 194);
-    margin-bottom: 8vw
+    color:  rgb(14, 14, 14);
+    margin-bottom: 8vw;
+    font-weight: 900;
 }
 
 #its-head{
