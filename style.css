@@ -197,14 +197,11 @@ section{
 }
 
 .timeline-container{
-    /* margin: 20px; */
     position: relative;
 }
 .timeline-box{
-    /* border: .2vw solid black; */
     width: 30.5vw;
     height: 20.5vw;
-    /* margin: 0.7vw; */
     position: relative;
     left: 7.6vw;
     margin-bottom: 10vw;
@@ -230,7 +227,6 @@ section{
     background-color: rgb(11, 11, 11);
     border-radius: 50%;
     position: absolute;
-    /* right: -12.9vw; */
     top: 7vw;
    
 }
@@ -256,7 +252,6 @@ margin-top: -30vw;
     width: 32vw;
     height: 13vw;
     margin-left: 1vw;
-    /* margin-bottom: 4vw; */
     display: flex;
     align-items: center;
     
@@ -264,7 +259,6 @@ margin-top: -30vw;
 .about-project  i{
     font-size: 6vw;
     margin-right: -20vw;
-    /* font-family: monospace; */
     color: rgb(6, 193, 255);
 
 }
@@ -276,7 +270,6 @@ margin-top: -30vw;
     color: rgb(75, 75, 255);
 }
 .linkHereR a{
-    /* text-decoration:dotted !important; */
     font-size: 2vw;
     font-weight: 800;
     margin-left:1.2vw;
@@ -286,7 +279,6 @@ margin-top: -30vw;
 
 .linkHereL a{
     font-weight: 800;
-    /* text-decoration: dotted;\    \    */
     font-size: 2vw;
     margin-right:1.2vw;
     color: rgb(6, 193, 255);
@@ -329,10 +321,13 @@ margin-top: -30vw;
 }
 
 .address{
-    
-    display: inline;
-    font-size: 2vw;
+   font-size: 2vw;
     text-align: center;
+    border-color: black;
+    border: .2vw solid;
+}
+#address-name{
+    font-size: 5vw;
 }
 .address-info{
     margin-bottom: 6vw;
