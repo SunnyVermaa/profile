@@ -1,5 +1,10 @@
 
-
+@media (prefers-color-scheme: dark) {
+    body {
+        background: rgba(0, 0, 0, 0.714);
+        color: white;
+    }
+}
 #section-contain{
     background-image: url(./FullStack/assets/background.png);
     width: auto;
@@ -253,21 +258,28 @@ margin-top: -30vw;
     font-size: 6vw;
     margin-right: -20vw;
     /* font-family: monospace; */
+    color: rgb(6, 193, 255);
+
 }
 .about-project-link i{
     margin-left: -8vw;
 }
 
 .linkHereR a{
-    text-decoration: none;
+    /* text-decoration:dotted !important; */
     font-size: 2vw;
+    font-weight: 800;
     margin-left:1.2vw;
+    color: rgb(6, 193, 255);
+
 }
 
 .linkHereL a{
-    text-decoration: none;
+    font-weight: 800;
+    /* text-decoration: dotted;\    \    */
     font-size: 2vw;
     margin-right:1.2vw;
+    color: rgb(6, 193, 255);
 }
 
 .timeline-divider{
@@ -297,7 +309,7 @@ margin-top: -30vw;
 }
 .contact-info a{
     text-decoration: none;
-    color: rgb(65, 58, 90);
+    color: rgb(169, 152, 232);
     font-family: manrope;
 }
 
