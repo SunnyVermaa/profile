@@ -1,5 +1,7 @@
 body{
     background: linear-gradient(rgb(96, 168, 219), white);
+    /* padding: 0;
+    margin: 0; */
 }
 
 #section-contain{
@@ -9,21 +11,42 @@ body{
     width: auto;
     height: auto;
 } 
+#nav-container {
+    position: fixed;
+    top: 0;
+  
+    width:97.1vw;
+
+    background: transparent;
+    background-size: cover;
+    transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    z-index: 1000;
+}
 #nav-container ul{
     margin-right: 3vw;
     padding-top: 10px;
     text-align: end;
-    
+}
+
+
+.nav-scrolled {
+    background: rgb(201, 231, 245) !important;
+    box-shadow: 0 4px 6px rgba(95, 135, 135, 0.1);
+}
+
+.nav-scrolled #ul-container li a {
+    color:rgb(29, 30, 29) !important;
+}
+.nav-scrolled #ul-container li a:hover{
+    color: rgb(7, 226, 255) !important;
 }
 #nav-container ul li{
     text-align: end;
     display: inline;
-    text-decoration: none;
     padding-right: 20px;
     font-size: 2vw;
-    color: white;
     font-family:Verdana;
-}
+    }
 
 #nav-container ul li a{
     text-decoration: none;
@@ -306,9 +329,11 @@ margin-top: -30vw;
     font-size: 3vw;
     display: flex;
     justify-content: space-evenly;
-    gap: 5vw;
+    gap: 4vw;
     flex-wrap: wrap;
     margin-bottom: 6vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 .contact-info a{
     text-decoration: none;
@@ -320,7 +345,7 @@ margin-top: -30vw;
     color: rgb(71, 71, 255);
 }
 
-.address{
+#address{
    font-size: 2vw;
     text-align: center;
     border-color: black;
@@ -384,5 +409,31 @@ margin-top: -30vw;
         background-color: rgba(166, 248, 220, 0.505);
 
     }
+
+    .nav-scrolled {
+        background: rgb(60, 72, 83) !important;
+        box-shadow: 0 4px 6px rgba(95, 135, 135, 0.1);
+    }
     
+    .nav-scrolled #ul-container li a {
+        color:white !important;
+    }
+    .nav-scrolled #ul-container li a:hover{
+        color: rgb(25, 129, 199) !important;
+    }
+
 }
+@media (min-width: 480px) and (max-width: 786px) { 
+    #nav-container {
+        width: 97.5%;
+    }
+}
+
+@media (max-width: 479px) and (min-width : 375px){
+    #nav-container{
+        width: 95.4% !important;
+    }
+}
+
+
+  
