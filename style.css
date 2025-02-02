@@ -16,7 +16,7 @@ body{
     top: 0;
   
     width:97.1vw;
-
+    /* height: 2vw; */
     background: transparent;
     background-size: cover;
     transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -423,15 +423,35 @@ margin-top: -30vw;
     }
 
 }
+@media (min-width: 1365px) and (max-width: 1978px) { 
+    #nav-container {
+        width: 98.4%;
+    }
+    #nav-container ul{
+        padding-top: 0px;
+        margin-top: 8px;
+
+    }
+}
 @media (min-width: 480px) and (max-width: 786px) { 
     #nav-container {
-        width: 97.5%;
+        width: 96.4%;
+    }
+    #nav-container ul{
+        padding-top: 0px;
+        margin-top: 3px;
+
     }
 }
 
 @media (max-width: 479px) and (min-width : 375px){
     #nav-container{
         width: 95.4% !important;
+    }
+    #nav-container ul{
+        padding-top: 0px;
+        margin-top: 2px;
+
     }
 }
 
