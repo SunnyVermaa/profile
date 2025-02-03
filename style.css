@@ -31,14 +31,14 @@ body{
 
 .nav-scrolled {
     background: rgb(201, 231, 245) !important;
-    box-shadow: 0 4px 6px rgba(95, 135, 135, 0.1);
+    box-shadow: 0 4px 6px rgba(50, 239, 116, 0.1);
 }
 
 .nav-scrolled #ul-container li a {
     color:rgb(29, 30, 29) !important;
 }
 .nav-scrolled #ul-container li a:hover{
-    color: rgb(7, 226, 255) !important;
+    color: rgba(212, 143, 255, 0.749) !important;
 }
 #nav-container ul li{
     text-align: end;
@@ -419,7 +419,7 @@ margin-top: -30vw;
         color:white !important;
     }
     .nav-scrolled #ul-container li a:hover{
-        color: rgb(25, 129, 199) !important;
+        color: rgb(8, 220, 244) !important;
     }
 
 }

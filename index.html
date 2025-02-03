@@ -246,40 +246,40 @@
 
     <script>
         // Disable Right-Click (Mouse)
-        // document.addEventListener("contextmenu", (event) => event.preventDefault());
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
 
-        // // Disable Keyboard Shortcuts
-        // document.addEventListener("keydown", (event) => {
-        //     if (
-        //         event.key === "F12" ||
-        //         (event.ctrlKey && event.shiftKey && event.key === "I") ||
-        //         (event.ctrlKey && event.shiftKey && event.key === "J") ||
-        //         (event.ctrlKey && event.key === "U") ||
-        //         (event.ctrlKey && event.key === "S")
-        //     ) {
-        //         event.preventDefault();
-        //     }
-        // });
+        // Disable Keyboard Shortcuts
+        document.addEventListener("keydown", (event) => {
+            if (
+                event.key === "F12" ||
+                (event.ctrlKey && event.shiftKey && event.key === "I") ||
+                (event.ctrlKey && event.shiftKey && event.key === "J") ||
+                (event.ctrlKey && event.key === "U") ||
+                (event.ctrlKey && event.key === "S")
+            ) {
+                event.preventDefault();
+            }
+        });
 
-        // document.onkeydown = function (event) {
-        //     if (event.keyCode == 123) { // F12
-        //         return false;
-        //     } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Ctrl+Shift+I
-        //         return false;
-        //     } else if (event.ctrlKey && event.shiftKey && event.keyCode == 74) { // Ctrl+Shift+J
-        //         return false;
-        //     } else if (event.ctrlKey && event.keyCode == 85) { // Ctrl+U
-        //         return false;
-        //     }
-        // };
+        document.onkeydown = function (event) {
+            if (event.keyCode == 123) { // F12
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Ctrl+Shift+I
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 74) { // Ctrl+Shift+J
+                return false;
+            } else if (event.ctrlKey && event.keyCode == 85) { // Ctrl+U
+                return false;
+            }
+        };
 
 
-        // // Detect DevTools Opening and Block
-        // setInterval(() => {
-        //     if (window.outerHeight - window.innerHeight > 100 || window.outerWidth - window.innerWidth > 100) {
-        //         document.body.innerHTML = "<h1>DevTools is Disabled!</h1>";
-        //     }
-        // }, 500);
+        // Detect DevTools Opening and Block
+        setInterval(() => {
+            if (window.outerHeight - window.innerHeight > 100 || window.outerWidth - window.innerWidth > 100) {
+                document.body.innerHTML = "<h1>DevTools is Disabled!</h1>";
+            }
+        }, 500);
 
         window.addEventListener("scroll", function () {
             let navbar = document.getElementById("nav-container");
