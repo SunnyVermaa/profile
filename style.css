@@ -437,7 +437,7 @@ margin-top: -30vw;
 }
 @media (min-width: 1365px) and (max-width: 1978px) { 
     #nav-container {
-        width: 98.4%;
+        width: 100%;
     }
     #nav-container ul{
         padding-top: 0px;
@@ -447,7 +447,7 @@ margin-top: -30vw;
 }
 @media (min-width: 480px) and (max-width: 786px) { 
     #nav-container {
-        width: 96.4%;
+        width: 100% !important;
     }
     #nav-container ul{
         padding-top: 0px;
@@ -468,7 +468,7 @@ margin-top: -30vw;
 
 @media (max-width: 479px) and (min-width : 359px){
     #nav-container{
-        width: 95.4% !important;
+        width: 100% !important;
         /* padding-top: 0; */
     }
     #nav-container ul{
