@@ -1,8 +1,11 @@
 body{
     background: linear-gradient(rgb(96, 168, 219), white);
-    /* padding: 0;
-    margin: 0; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
 }
+
 
 #section-contain{
     background:white url("./FullStack/assets/background.png");
@@ -10,19 +13,23 @@ body{
 
     width: auto;
     height: auto;
+    /* display: flex; */
+
 } 
+
 #nav-container {
     position: fixed;
     top: 0;
   
-    width:97.1vw;
+    width:100%;
     /* height: 2vw; */
-    background: transparent;
+    background-repeat: no-repeat;
     background-size: cover;
     transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    z-index: 1000;
+    z-index: 1001;
 }
 #nav-container ul{
+
     margin-right: 3vw;
     padding-top: 10px;
     text-align: end;
@@ -57,7 +64,7 @@ body{
 }
 #img-container{
     text-align: center;
-     margin-top: 10vw;
+    padding-top: 14vw;
     
 }
 
@@ -99,15 +106,19 @@ body{
 #its-head{
     width: 100%;
     height: auto;
-    border-color: black;
-    border: .2vw solid;
+    /* border-color: black;
+    border-bottom: .2vw solid; */
+    /* z-index: 111112; */
+
+    /* position: absolute; */
 }
 
 section{
     width: auto;
     height: auto;
-    border-color: black;
-    border: .2vw solid;
+    border-color: rgba(0, 0, 0, 0.445);
+    border-bottom: .1vw solid;
+    /* z-index: 111111; */
     
 }   
 
@@ -320,7 +331,8 @@ margin-top: -30vw;
     position:sticky;
     display: flex;
     margin-top: -7px;
-    top: 0%;
+    top: 5.7vw;
+    z-index: 10;
 }
 
 
@@ -348,8 +360,8 @@ margin-top: -30vw;
 #address{
    font-size: 2vw;
     text-align: center;
-    border-color: black;
-    border: .2vw solid;
+    /* border-color: black;
+    border: .2vw solid; */
 }
 #address-name{
     font-size: 5vw;
@@ -389,7 +401,7 @@ margin-top: -30vw;
         color: rgba(255, 255, 255, 0.985);
     }
     #its-head, .outer-div, .inner-div, section{
-        border-color: white;
+        border-color: rgba(255, 255, 255, 0.703);
     }
 
     #nav-container ul li a, .contact-info a{
@@ -442,9 +454,19 @@ margin-top: -30vw;
         margin-top: 15px;
 
     }
+    .timeline-container{
+        display: inline;
+    }
+
+    .timeline-divider{
+        display: none;
+    }
+    .timeline-divider i{
+        display: none;
+    }
 }
 
-@media (max-width: 479px) and (min-width : 375px){
+@media (max-width: 479px) and (min-width : 359px){
     #nav-container{
         width: 95.4% !important;
         /* padding-top: 0; */
@@ -453,6 +475,12 @@ margin-top: -30vw;
         padding-top: 0px;
         margin-top: 8px;
 
+    }
+    .timeline-divider{
+        display: none !important;
+    }
+    .timeline-divider i{
+        display: none !important;
     }
 }
 
