@@ -184,10 +184,10 @@ section{
 }
 
 #css{
-    width: 60%;
+    width: 70%;
 }
 #css p{
-    margin-left: 6vw;
+    margin-left: 5vw;
 }
 
 #javascript{
@@ -205,10 +205,10 @@ section{
 }
 
 #react{
-    width: 40%;
+    width: 60%;
 }
 #react p{
-    margin-left: 10vw;
+    margin-left: 6vw;
 }
 
 #express{
